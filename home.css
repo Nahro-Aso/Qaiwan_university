@@ -1,10 +1,11 @@
 html,
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #F0F9FF;
 }
 
 * {
-    margin: 0;
+    margin: 0px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -30,28 +31,31 @@ body {
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-left: 50px;
+    padding-right: 50px;
     overflow: hidden;
-    background-color: #188fbb;
+    background-color: white;
     position: sticky;
+    color: black;
     top: 0;
     width: 100%;
 }
 
 li {
-    float: left;
+    float: right;
+    color: black;
 }
 
 li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 17px 18px;
     text-decoration: none;
 }
 
 li a:hover:not(.active) {
-    background-color: #111;
+    color: grey;
 }
 
 span {
