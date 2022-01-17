@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="snackbar.css">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="icon" type="image/png" href="images/Qlogo.png">
 
-    <title>Qaiwan International University</title>
+    <title>Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -21,7 +22,7 @@
 
 
     <div class="navbar">
-        <a href="#home">Home</a>
+        <a href="home.html">Home</a>
 
         <div class="dropdown">
             <button class="dropbtn">About
@@ -30,7 +31,7 @@
             <div class="dropdown-content">
                 <a href="#">Qaiwan International University</a>
                 <a href="#">Vision and Mission</a>
-                <a href="#">Contact Us</a>
+                <a href="contact.html">Contact Us</a>
 
             </div>
         </div>
@@ -56,7 +57,7 @@
 
             </div>
         </div>
-        <a href="life_in_kurdstan.html">Life In Kurdisstan</a>
+        <a href="life_in_kurdstan.html">Life In Kurdistan</a>
         <a href="login.html" style="float: right;">Login</a>
 
 
@@ -184,11 +185,11 @@
 
 
 
-        <!--           
-          
-            
+        <!--
+
+
             <h2>Employee Details</h2>
-            
+
             <table style="border: #188FBB 2 solid;">
               <tr>
                 <th>id</th>
@@ -200,11 +201,11 @@
               </tr>
              -->
         <!-- <?php
-            
+
           //  include "dbConn.php"; // Using database connection file here
-            
+
            // $records = mysqli_query($con,"select * from messeges"); // fetch data from database
-            
+
            // while($data = mysqli_fetch_array($records))
             //{
             ?>
@@ -230,7 +231,7 @@
 
                     <?php  // Close connection
                   //  mysqli_close($con);
-                    
+
                     ?> -->
 
 
@@ -252,11 +253,11 @@
         $email = $_REQUEST['email'];
         $phone =  $_REQUEST['phone'];
         $message = $_REQUEST['message'];
-      
+
 
 
     $query = "INSERT INTO messeges VALUES ('$name','$email','$phone','$message')";
-   
+
     $result = mysqli_query($con, $query);
 
     if ($result) {
@@ -269,8 +270,8 @@
                 <?php
     }
     //close connection
-  
-    
+
+
 
 
 ?>
